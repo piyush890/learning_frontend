@@ -34,11 +34,3 @@ jobs:
 
       - name: Push Frontend Image
         run: docker push ${{ secrets.DOCKER_USERNAME }}/learninghub-frontend
-
-
-      - name: Build Backend Image
-        run: docker build -t ${{ secrets.DOCKER_USERNAME }}/learninghub-backend ./LearningHub_Backend
-
-
-      - name: Push Backend Image
-        run: docker push ${{ secrets.DOCKER_USERNAME }}/learninghub-backend
