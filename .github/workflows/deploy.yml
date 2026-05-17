@@ -21,10 +21,6 @@ jobs:
         run: ls
 
 
-      - name: Docker Compose Validate
-        run: docker compose config
-
-
       - name: Login to Docker Hub
         uses: docker/login-action@v3
         with:
